@@ -1,0 +1,137 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* THEME */
+body {
+    background: #0f172a;
+    color: #f8fafc;
+    transition: 0.4s;
+}
+
+#theme-toggle:checked ~ * {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* TOGGLE BUTTON */
+.toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #2563eb, #7c3aed);
+    animation: bgmove 6s infinite alternate;
+}
+
+.hero span {
+    color: #facc15;
+}
+
+@keyframes bgmove {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+/* SKILLS */
+.skills {
+    padding: 60px;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.bar {
+    background: #334155;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    animation: load 2s forwards;
+}
+
+.python { width: 70%; background: #22c55e; }
+.web { width: 80%; background: #38bdf8; }
+.ml { width: 60%; background: #f97316; }
+
+@keyframes load {
+    from { width: 0; }
+}
+
+/* PROJECTS */
+.projects {
+    padding: 60px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+/* TIMELINE */
+.timeline {
+    padding: 60px;
+}
+
+.line {
+    border-left: 3px solid #38bdf8;
+    padding-left: 20px;
+}
+
+.event {
+    margin: 15px 0;
+    position: relative;
+}
+
+.event::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #38bdf8;
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+    top: 5px;
+}
+.tools {
+    width: 65%;
+    background: #a855f7;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
