@@ -1,131 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sirana Yugesh Royal | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sirana Yugesh Royal — AI & ML Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,700;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- THEME TOGGLE -->
-<input type="checkbox" id="theme-toggle">
-<label for="theme-toggle" class="toggle">🌙 / ☀️</label>
+<!-- ── NAVBAR ── -->
+<nav id="navbar">
+  <div class="nav-brand">Yugesh<span>.</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Hi, I'm <span>Sirana Yugesh Royal</span></h1>
-    <p>
-        AIML Graduate | Aspiring AIML Engineer | Strong in Python & Front-End Development |
-        Focused on building skills through hands-on practice and real-world projects
-    </p>
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Open to Internships &amp; Collaborations</div>
+      <h1 class="hero-name">Sirana<br/><em>Yugesh Royal</em></h1>
+      <p class="hero-tagline">Aspiring AI &amp; Machine Learning Engineer</p>
+      <div class="typing-row"><span id="typed"></span></div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+        <a href="#" class="btn btn-outline" onclick="alert('Resume link coming soon!')"><i class="fas fa-download"></i> Resume</a>
+      </div>
+    </div>
+
+    <!-- Info Card -->
+    <div class="hero-card">
+      <div class="hero-card-avatar">SY</div>
+      <h4>Sirana Yugesh Royal</h4>
+      <p>B.Tech AI &amp; ML · Chittoor, India</p>
+      <div class="hero-card-stats">
+        <div class="stat">
+          <span class="num">2</span>
+          <span class="lbl">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="num">7.24</span>
+          <span class="lbl">CGPA</span>
+        </div>
+        <div class="stat">
+          <span class="num">2026</span>
+          <span class="lbl">Award Year</span>
+        </div>
+        <div class="stat">
+          <span class="num">2+</span>
+          <span class="lbl">Years Study</span>
+        </div>
+      </div>
+      <div class="hero-card-tags">
+        <span class="hero-tag-pill">Python</span>
+        <span class="hero-tag-pill">NLP</span>
+        <span class="hero-tag-pill">ML</span>
+        <span class="hero-tag-pill">JavaScript</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- SKILLS -->
-<section class="skills">
-    <h2>Technical Skills</h2>
-
-    <div class="skill">
-        <span>Python</span>
-        <div class="bar"><div class="progress python"></div></div>
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">The Person Behind the Code</h2>
     </div>
-
-    <div class="skill">
-        <span>Machine Learning & Deep Learning</span>
-        <div class="bar"><div class="progress ml"></div></div>
-    </div>
-
-    <div class="skill">
-        <span>SQL & Tools (Git, Jupyter, VS Code)</span>
-        <div class="bar"><div class="progress tools"></div></div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="projects">
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-
-        <div class="card">
-            <h3>Resume ATS Score Analyzer</h3>
-            <p>
-                Web application that evaluates resume compatibility with job descriptions using NLP.
-                Generates ATS score to help optimize resumes for better recruiter visibility.
-            </p>
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <div class="info-block">
+          <div class="info-row"><i class="fas fa-map-marker-alt"></i> Chittoor, Andhra Pradesh, India</div>
+          <div class="info-row"><i class="fas fa-envelope"></i><a href="mailto:yugeshroyal321@gmail.com">yugeshroyal321@gmail.com</a></div>
+          <div class="info-row"><i class="fas fa-phone"></i> +91 9391439125</div>
+          <div class="info-row"><i class="fas fa-language"></i> English, Telugu</div>
         </div>
-
-        <div class="card">
-            <h3>Online Election System</h3>
-            <p>
-                Secure online voting platform managing voters and candidates.
-                Ensures vote integrity, access control, and transparent result processing.
-            </p>
+        <div class="edu-block">
+          <span class="edu-tag">Education</span>
+          <h4>B.Tech in CSE (AI &amp; ML)</h4>
+          <p>Sreenivasa Institute Of Technology &amp; Management Studies, Chittoor</p>
+          <p class="edu-years">2023 – 2027 (Expected)</p>
+          <p class="cgpa">CGPA: 7.24</p>
         </div>
-
-        <div class="card">
-            <h3>Language Translation System</h3>
-            <p>
-                Multi-language translation tool with clean UI.
-                Designed for usability and text accuracy handling.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<!-- EDUCATION -->
-<section class="timeline">
-    <h2>Education</h2>
-
-    <div class="line">
-        <div class="event">
-            <strong>B.Tech – Artificial Intelligence & Machine Learning</strong><br>
-            Srinivasa Institute of Technology & Management Studies (JNTUA)<br>
-            CGPA: 7.24 
-        </div>
-
-        <div class="event">
-            <strong>Intermediate</strong><br>
-            Sri Vidhya Vikas Intermediate College<br>
-            Percentage: 66.3%
-        </div>
-
-        <div class="event">
-            <strong>SSC</strong><br>
-            Nalanda English Medium High School<br>
-            Marks: 579
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact">
-    <h2>Contact</h2>
-
-    <div class="contact-box">
-        <p><strong>Email:</strong> 
-            <a href="mailto:yugeshroyal321@gmail.com">
-                yugeshroyal321@gmail.com
-            </a>
+      </div>
+      <div class="about-bio-wrap reveal">
+        <p>
+          B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. Skilled in Python and C with hands-on experience building practical projects using NLP techniques and web technologies.
         </p>
-
-        <p><strong>LinkedIn:</strong> 
-            <a href="https://www.linkedin.com/in/sirana-yugesh-royal-6b9598354" target="_blank">
-                linkedin.com/in/sirana-yugesh-royal
-            </a>
+        <p>
+          Focused on developing intelligent systems that solve real-world problems. Passionate about software development, continuously improving problem-solving skills and exploring the latest advancements in AI. Looking for opportunities to apply technical skills, learn from industry professionals, and contribute to innovative projects.
         </p>
-
-        <p><strong>GitHub:</strong> 
-            <a href="https://github.com/yugeshroyal321-stack" target="_blank">
-                github.com/yugeshroyal321-stack
-            </a>
-        </p>
+        <div class="focus-cards">
+          <div class="focus-item">
+            <i class="fas fa-brain"></i>
+            <span>Machine Learning</span>
+          </div>
+          <div class="focus-item">
+            <i class="fas fa-code"></i>
+            <span>Python Development</span>
+          </div>
+          <div class="focus-item">
+            <i class="fas fa-globe"></i>
+            <span>Web Development</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-label">Technical Skills</p>
+      <h2 class="section-title">What I Work With</h2>
+    </div>
+    <div class="skills-grid reveal-group">
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h4>Programming Languages</h4>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">C</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-globe"></i></div>
+        <h4>Web Technologies</h4>
+        <div class="tag-row">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+        <h4>Core Competencies</h4>
+        <div class="tag-row">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">NLP Basics</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+        <h4>Soft Skills</h4>
+        <div class="tag-row">
+          <span class="tag">Communication</span>
+          <span class="tag">Coordination</span>
+          <span class="tag">Team Collaboration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-label">Projects</p>
+      <h2 class="section-title">Things I've Built</h2>
+      <p class="section-sub">Practical projects built with real-world applications in mind, combining AI and web development.</p>
+    </div>
+    <div class="projects-grid reveal-group">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon-wrap"><i class="fas fa-file-alt"></i></div>
+          <span class="project-num">01</span>
+        </div>
+        <div class="project-body">
+          <h3>ATS Resume Analyzer</h3>
+          <p>A resume analysis system using Python and NLP techniques to evaluate resumes and generate an ATS score based on job requirements. Helps candidates optimize their resumes for automated screening systems.</p>
+          <div class="tech-row">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">NLP</span>
+            <span class="tech-chip">Text Analysis</span>
+          </div>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon-wrap"><i class="fas fa-pen-nib"></i></div>
+          <span class="project-num">02</span>
+        </div>
+        <div class="project-body">
+          <h3>Handwritten Digit Recognition</h3>
+          <p>A web application that recognizes handwritten numbers and mathematical symbols through a canvas input interface. The Python backend processes drawn inputs in real-time using a trained recognition model.</p>
+          <div class="tech-row">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">HTML</span>
+            <span class="tech-chip">CSS</span>
+            <span class="tech-chip">JavaScript</span>
+          </div>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── ACHIEVEMENTS ── -->
+<section id="achievements">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-label">Achievements</p>
+      <h2 class="section-title">Recognition &amp; Awards</h2>
+    </div>
+    <div class="reveal">
+      <div class="achievement-card">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-info">
+          <h4>Second Prize — Project Expo</h4>
+          <p>Sitams Anveshan 2026 · Awarded for the ATS Resume Analyzer project at the institutional level project expo.</p>
+          <div class="ach-badge"><i class="fas fa-star"></i> Second Prize · 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <p class="contact-intro">I'm open to internships, collaborations, and learning opportunities. Feel free to reach out!</p>
+        <a href="mailto:yugeshroyal321@gmail.com" class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-card-info">
+            <h5>Email</h5>
+            <p>yugeshroyal321@gmail.com</p>
+          </div>
+        </a>
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-card-info">
+            <h5>Phone</h5>
+            <p>+91 9391439125</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-card-info">
+            <h5>Location</h5>
+            <p>Chittoor, Andhra Pradesh, India</p>
+             <h5>LinkedIn:</h5>
+            <p>www.linkedin.com/in/sirana-yugesh-royal-syr</p>
+
+             <h5>GitHub:</h5>
+            <p>https://github.com/yugeshroyal321-stack</p>
+
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" onsubmit="handleForm(event)">
+        <div>
+          <h4>Send a Message</h4>
+          <p>Fill in the form and I'll get back to you soon.</p>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" required/>
+          </div>
+          <div class="form-field">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" required/>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea placeholder="Hi Yugesh, I'd like to discuss..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
 <footer>
-    <p>© 2026 Sirana Yugesh Royal</p>
+  <div class="footer-brand">Yugesh<span>.</span></div>
+  <p class="footer-copy">© 2026 Sirana Yugesh Royal · Built with passion</p>
+  <div class="footer-socials">
+    <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="mailto:yugeshroyal321@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
