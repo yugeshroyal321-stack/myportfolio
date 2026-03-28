@@ -194,7 +194,7 @@
             <span class="tech-chip">NLP</span>
             <span class="tech-chip">Text Analysis</span>
           </div>
-          <a href="#" class="project-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/yugeshroyal321-stack" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
@@ -212,7 +212,7 @@
             <span class="tech-chip">CSS</span>
             <span class="tech-chip">JavaScript</span>
           </div>
-          <a href="#" class="project-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/yugeshroyal321-stack" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
@@ -269,38 +269,47 @@
           <div class="contact-card-info">
             <h5>Location</h5>
             <p>Chittoor, Andhra Pradesh, India</p>
-             <h5>LinkedIn:</h5>
-            <p>www.linkedin.com/in/sirana-yugesh-royal-syr</p>
-
-             <h5>GitHub:</h5>
-            <p>https://github.com/yugeshroyal321-stack</p>
-
           </div>
         </div>
+        <a href="https://www.linkedin.com/in/sirana-yugesh-royal-syr" target="_blank" class="contact-card">
+          <div class="contact-card-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="contact-card-info">
+            <h5>LinkedIn</h5>
+            <p>sirana-yugesh-royal-syr</p>
+          </div>
+        </a>
+        <a href="https://github.com/yugeshroyal321-stack" target="_blank" class="contact-card">
+          <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-card-info">
+            <h5>GitHub</h5>
+            <p>yugeshroyal321-stack</p>
+          </div>
+        </a>
       </div>
 
-      <form class="contact-form reveal" onsubmit="handleForm(event)">
+      <form class="contact-form reveal" id="contactForm" onsubmit="handleForm(event)">
         <div>
           <h4>Send a Message</h4>
           <p>Fill in the form and I'll get back to you soon.</p>
         </div>
         <div class="form-row">
           <div class="form-field">
-            <label>Your Name</label>
-            <input type="text" placeholder="John Doe" required/>
+            <label for="from_name">Your Name</label>
+            <input id="from_name" name="from_name" type="text" placeholder="John Doe" required/>
           </div>
           <div class="form-field">
-            <label>Email Address</label>
-            <input type="email" placeholder="john@example.com" required/>
+            <label for="reply_to">Email Address</label>
+            <input id="reply_to" name="reply_to" type="email" placeholder="john@example.com" required/>
           </div>
         </div>
         <div class="form-field">
-          <label>Message</label>
-          <textarea placeholder="Hi Yugesh, I'd like to discuss..."></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Hi Yugesh, I'd like to discuss..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" id="submitBtn">
           <i class="fas fa-paper-plane"></i> Send Message
         </button>
+        <p id="formStatus" style="font-size:0.85rem;margin-top:0.25rem;display:none;"></p>
       </form>
     </div>
   </div>
@@ -311,12 +320,14 @@
   <div class="footer-brand">Yugesh<span>.</span></div>
   <p class="footer-copy">© 2026 Sirana Yugesh Royal · Built with passion</p>
   <div class="footer-socials">
-    <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/sirana-yugesh-royal-syr" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/yugeshroyal321-stack" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
     <a href="mailto:yugeshroyal321@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
   </div>
 </footer>
 
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
